@@ -1,0 +1,658 @@
+/* ALL Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid white; */
+}
+
+body {
+    background-color: rgb(9, 22, 109);
+}
+
+nav {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(9, 22, 109);
+    height: 60px;
+}
+
+nav>a {
+    flex-wrap: wrap;
+    flex-direction: row;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin-right: 30px;
+    position: sticky;
+    color: rgb(164, 170, 207);
+    opacity: 0.5;
+}
+
+nav>a:hover {
+    color: white;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-size: 20px;
+    transition-duration: 1s;
+    opacity: 1;
+}
+
+.header {
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 20px;
+    display: grid;
+    grid-template-areas:
+        'foto summary'
+        'foto summary'
+    ;
+    background-color: rgba(165, 208, 224, 0.4);
+    padding: 30px;
+}
+
+.foto {
+    grid-area: foto;
+    margin: 0 auto;
+    justify-content: center;
+    border-radius: 5px solid red;
+}
+
+.foto>img {
+    display: flex;
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px solid red;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+.summary {
+    grid-area: summary;
+    margin: 0 auto;
+    justify-content: center;
+}
+.summary > h1 {
+    margin-bottom: 15px;
+    font-size: 30px;
+    color: white;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.summary > p.motto {
+    font-size: 28px;
+    text-indent: 0;
+}
+.summary > p {
+    font-size: 22px;
+    text-indent: 20px;
+}
+.border {
+    border: 1px solid black;
+    margin: 10px 0px;
+}
+
+/* Index Page */
+.profile {
+    display: grid;
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 20px;
+    justify-content: center;
+    grid-template-areas:
+        'headheading headheading'
+        'headpro headpro'
+        'rangeproses rangeproses'
+        'bar bar'
+        'btn btn'
+    ;
+    background-color: rgba(165, 208, 224, 0.4);
+    padding: 30px;
+}
+.profile > h3 {
+    grid-area: headheading;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 400;
+}
+.headproses>h3 {
+    grid-area: headproses;
+    text-align: center;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    justify-content: center;
+}
+
+
+.rangeproses {
+    grid-area: rangeproses;
+    width: 900px;
+}
+
+#prosessaya {
+    width: 900px;
+    margin: 15px auto;
+    background-color: #ddd;
+}
+
+#prosesbar {
+    width: 0%;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+}
+
+.profile>p {
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.profile>.bar {
+    width: 90%;
+    height: 30px;
+    color: rgb(240, 63, 63);
+    margin: 0 auto;
+    background-color: rgb(219, 171, 171);
+}
+
+.profile > button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: skyblue;
+    opacity: 0.5;
+    grid-area: btn;
+    margin: 0 auto;
+    justify-content: centers;
+    align-items: center;
+
+}
+
+.profile>.bio {
+    margin: 25px auto;
+    justify-content: left;
+}
+
+.bio {
+    display: grid;
+    margin: 15px auto;
+    justify-content: center;
+    width: 100%;
+    grid-gap: 10px;
+    grid-template-areas:
+        'bio bio'
+        'name names'
+        'ttl ttld'
+        'adds addsd'
+        'info detail'
+        'phone phones'
+        'email mail'
+        'linked linkedin'
+    ;
+}
+
+.bio>h3 {
+    grid-area: bio;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bio>hr {
+    color: rgb(99, 109, 173);
+}
+
+.bio>p.name {
+    grid-area: name;
+    text-align: left;
+    width: 300px;
+}
+
+.bio>p.names {
+    grid-area: names;
+    text-align: left;
+}
+
+.bio>p.ttl {
+    grid-area: ttl;
+    text-align: left;
+    width: 300px;
+}
+
+.bio>p.ttld {
+    grid-area: ttld;
+    text-align: left;
+}
+
+.bio>p.adds {
+    grid-area: adds;
+    text-align: left;
+    width: 300px;
+}
+
+.bio>p.addsd {
+    grid-area: addsd;
+    text-align: left;
+}
+
+.bio>p.phone {
+    grid-area: phone;
+    text-align: left;
+}
+
+.bio>p.phones {
+    grid-area: phones;
+    text-align: left;
+}
+
+.bio>p.email {
+    grid-area: email;
+    text-align: left;
+}
+
+.bio>p.mail {
+    grid-area: mail;
+    text-align: left;
+}
+
+@media screen and (max-width: 650px) {
+    .header {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .header > .foto {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .profile {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .bio>p.name {
+        text-align: left;
+        width: 120px;
+    }
+    
+    .bio>p.names {
+        text-align: left;
+    }
+    
+    .bio>p.ttl {
+        text-align: left;
+        width: 120px;
+    }
+    
+    .bio>p.ttld {
+        text-align: left;
+    }
+    
+    .bio>p.adds {
+        text-align: left;
+        width: 120px;
+    }
+    
+    .bio>p.addsd {
+        text-align: left;
+    }
+    
+    .bio>p.phone {
+        text-align: left;
+        width: 120px;
+    }
+    
+    .bio>p.phones {
+        text-align: left;
+    }
+    
+    .bio>p.email {
+        text-align: left;
+    }
+    
+    .bio>p.mail {
+        text-align: left;
+    }
+    .rangeproses {
+        width: 100%;
+        display: block;
+    }
+    #prosessaya {
+        width: 100%;
+        display: block;
+    }
+    #bordertop {
+        display: none;
+    }
+    #bordertop2 {
+        display: none;
+    }
+
+}
+
+/* About */
+.pengalaman {
+    display: grid;
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 20px;
+    justify-content: center;
+    grid-template-areas:
+        'hwork1 hwork1'
+        'work work'
+    ;
+    background-color: rgba(165, 208, 224, 0.4);
+    padding: 10px;
+
+}
+
+.pengalaman>h3 {
+    grid-area: hwork1;
+    justify-content: center;
+    margin: 10px auto;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.work {
+    display: grid;
+    margin: 15px auto;
+    width: 900px;
+    grid-template-areas:
+        'work1p work1p'
+        'work1dt work1dt'
+        'ttj1 ttj1'
+        'work2p work2p'
+        'work2dt work2dt'
+        'ttj2 ttj2'
+        'work3p work3p'
+        'work3dt work3dt'
+        'ttj3 ttj3'
+    ;
+}
+
+.work>hr {
+    color: rgb(99, 109, 173);
+}
+
+.work>p.pt1 {
+    grid-area: work1p;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.work>dt.pt1 {
+    grid-area: work1dt;
+    text-align: left;
+}
+
+.work>ul.tugas1 {
+    grid-area: ttj1;
+    margin-left: 30px;
+}
+
+.work>p.pt2 {
+    grid-area: work2p;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.work>dt.pt2 {
+    grid-area: work2dt;
+    text-align: left;
+}
+
+.work>ul.tugas2 {
+    grid-area: ttj2;
+    margin-left: 30px;
+}
+
+.work>p.pt3 {
+    grid-area: work3p;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.work>dt.pt3 {
+    grid-area: work3dt;
+    text-align: left;
+}
+
+.work>ul.tugas3 {
+    grid-area: ttj3;
+    margin-left: 30px;
+}
+@media screen and (max-width: 650px) {
+    .pengalaman {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .work {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+}
+
+/* Portofolio */
+.headportofolio {
+    display: grid;
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+    grid-template-areas:
+        'hpf hpf'
+        'cpf cpf'
+    ;
+    background-color: rgba(165, 208, 224, 0.4);
+    padding: 10px;
+
+}
+.headportofolio > h2 {
+    grid-area: hpf;
+    text-align: center;
+}
+.containerfolio {
+    box-sizing: border-box;
+    height: 180px;
+}
+.columnfolio {
+    float: left;
+    width: 40%;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 0 8px;
+}
+
+.columnfolio > img {
+    border-radius: 20px;
+}
+
+.containerfolio > p {
+    margin-bottom: 10px
+}
+.containerfolio > a {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: skyblue;
+    opacity: 0.5;
+    grid-area: btn;
+    margin: 10px auto;
+    justify-content: centers;
+    align-items: center;
+    color: black;
+}
+
+@media screen and (max-width: 650px) {
+    .columnfolio {
+        width: 100%;
+        display: block;
+    }
+}
+
+.cardfolio {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.containerfolio {
+    padding: 0 16px;
+}
+
+.containerfolio::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+    margin: 10px auto;
+}
+
+.linkedin {
+    list-style: none;
+    text-decoration: none;
+    background-color: white;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+/* Team */
+.team {
+    display: grid;
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+    grid-template-areas:
+        'htm htm'
+        'clom clom'
+    ;
+    background-color: rgba(165, 208, 224, 0.4);
+    padding: 10px;
+
+}
+.team > h2 {
+    grid-area: htm;
+    text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.column > img {
+    border-radius: 20px;
+}
+
+.container > p {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+    margin: 10px auto;
+}
+
+
+
+/* Contact */
+.contactform {
+    display: grid;
+    width: 80%;
+    margin: 100px auto;
+    border-radius: 20px;
+    justify-content: center;
+    grid-template-areas: 
+    'form form'
+    'btnc btnc'
+    ;
+    box-sizing: border-box;
+    background-color: rgba(165, 208, 224, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    padding: 20px;
+}
+input[type=text],
+select,
+textarea {
+    grid-area: form;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+input[type=submit] {
+    grid-area: btnc;
+    background-color: #52ace7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: center;
+}
+input[type=submit]:hover {
+    background-color: #d43139;
+}
